@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epoch Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Optional custom styles can go here */
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans p-8">
+    <header class="flex justify-between items-center mb-12">
+        <h1 class="text-4xl font-bold text-indigo-700">Epoch Project</h1>
+        <div class="text-xl font-medium">
+            Total Funds: <span id="total-funds" class="font-bold text-green-600">$0.00</span>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto">
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Make a Contribution</h2>
+            <div class="flex items-end space-x-4">
+                <div class="flex-grow">
+                    <label for="contribution-amount" class="block text-sm font-medium text-gray-700">Contribution Amount</label>
+                    <input type="number" id="contribution-amount" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2" placeholder="e.g., 50.00">
+                </div>
+                <button id="contribute-btn" class="bg-indigo-600 text-white font-bold py-2 px-6 rounded-md hover:bg-indigo-700 transition duration-300">
+                    Contribute
+                </button>
+            </div>
+            <p class="mt-4 text-sm text-gray-500">Minimum Contribution: <span id="min-contribution" class="font-semibold">$10.00</span></p>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div class="bg-indigo-50 p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold text-indigo-700">Average Team Spend</h3>
+                <p id="avg-spend" class="text-3xl font-bold mt-2">$0.00</p>
+            </div>
+            <div class="bg-indigo-50 p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold text-indigo-700">User Fund</h3>
+                <p id="user-fund" class="text-3xl font-bold mt-2 text-green-600">$0.00</p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-semibold mb-4">Team Performance</h2>
+            <div id="teams-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
